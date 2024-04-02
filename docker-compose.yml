@@ -1,0 +1,7 @@
+version: '3.4'
+name: pp-test
+services:
+  pp-test:
+    image: pp-test-1
+    container_name: pp-test-1
+    build: .
