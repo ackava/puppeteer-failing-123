@@ -2,7 +2,9 @@ import puppeteer from "puppeteer-core";
 import process from "process";
 
 const p = await puppeteer.launch({
-    channel: "chrome"
+    dumpio: true,
+    executablePath: "google-chrome-stable",
+    protocolTimeout: 60000
 });
 
 const page = await p.newPage();
